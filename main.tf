@@ -25,6 +25,10 @@ resource "aws_instance" "blog" {
   }
 }
 
+data "aws_vpc" "default"{
+  default = true
+}
+
 resource "aws_security_group" "blog"{
   name = "blog"
   description = "Allow http and https in. Allow everything out."
