@@ -64,7 +64,7 @@ module "alb" {
 
       }
     }
-  ]
+  }
 
   
   tags = {
